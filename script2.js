@@ -40,7 +40,7 @@ document.getElementById("box2").innerHTML = 'Class average is ' + classResult;
 
 
 
-
+//fizzbuzz solution
 for (i = 1; i < 21; i++) {
     var FizzBuzz = "";
 
@@ -58,3 +58,19 @@ for (i = 1; i < 21; i++) {
     }
     document.getElementById("box3").innerHTML += FizzBuzz;
 }
+
+//first solution with stars
+let stars = ['*', '**', '***', '****', '*****'];
+
+stars.forEach(function (value) {
+    document.getElementById("box4").innerHTML += value + '<br>';
+});
+
+
+//second solution with stars
+for (let star = '*'; star != '******'; star += '*') {
+
+    document.getElementById("box5").innerHTML += star + '<br>';
+
+}
+

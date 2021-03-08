@@ -23,17 +23,17 @@ let arrayGrades = [studentGradeOne, studentGradeTwo, studentGradeThree, studentG
 
 arrayStudents.forEach( (student, index) => {
     const grade = arrayGrades[index]; // If you have two separate arrays, you need to access the [index] property of the other array in each iteration:
-    document.getElementById("intermediateOne").innerHTML += `${student} = ${grade}`;
+    document.getElementById("intermediateOne").innerHTML += `${student} = ${grade} `;
     if (grade < 60) {
-        document.getElementById("intermediateOne").innerHTML += ` F <br>`;
+        document.getElementById("intermediateOne").innerHTML += `F <br>`;
     } else if (grade < 70) {
-        document.getElementById("intermediateOne").innerHTML += ` D <br>`;
+        document.getElementById("intermediateOne").innerHTML += `D <br>`;
     } else if (grade < 80) {
-        document.getElementById("intermediateOne").innerHTML += ` C <br>`;
+        document.getElementById("intermediateOne").innerHTML += `C <br>`;
     } else if (grade < 90) {
-        document.getElementById("intermediateOne").innerHTML += ` B <br>`;
+        document.getElementById("intermediateOne").innerHTML += `B <br>`;
     } else {
-        document.getElementById("intermediateOne").innerHTML += ` A <br>`;
+        document.getElementById("intermediateOne").innerHTML += `A <br>`;
     }
 });
 

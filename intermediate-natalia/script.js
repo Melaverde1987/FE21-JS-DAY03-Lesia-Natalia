@@ -34,6 +34,13 @@ arrayStudents.forEach( (student, index) => {
         document.getElementById("intermediateOne").innerHTML += `B <br>`;
     } else {
         document.getElementById("intermediateOne").innerHTML += `A <br>`;
-    }
+    } 
 });
 
+        // Finally, calculate the class average and output it (e.g. if the class average is 74 points, their average grade will be C).
+sum = 0;
+classAverage = 0;
+arrayGrades.forEach( (gradeNew) => {
+    sum = sum + gradeNew;
+    classAverage = sum/arrayGrades.length;
+}); document.getElementById("intermediateOne").innerHTML += `The average of the class is: ${classAverage}`;

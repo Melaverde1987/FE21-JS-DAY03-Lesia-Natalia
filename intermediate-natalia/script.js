@@ -43,4 +43,53 @@ classAverage = 0;
 arrayGrades.forEach( (gradeNew) => {
     sum = sum + gradeNew;
     classAverage = sum/arrayGrades.length;
-}); document.getElementById("intermediateOne").innerHTML += `The average of the class is: ${classAverage}`;
+}); document.getElementById("intermediateOne").innerHTML += `The average of the class is: ${classAverage}  <br>`;
+
+
+
+
+// Exercise 2 | FizzBuzz -- Create a JavaScript program which iterates the integers from 1 to 100. For multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+
+function range(start, count) {
+    return Array.apply(0, Array(count))
+      .map((element, index) => index + start);
+}
+
+let numArray = range(1,100);
+console.log(numArray);
+
+div3 = 0;
+div5 = 0;
+var newArray = new Array;
+
+numArray.forEach( (num) => {
+    let div3 = num / 3; // 1/3
+    let div3Remainder = num % 3;
+    let div5 = num / 5;
+    let div5Remainder = num % 5;
+    if (num % 3 == 0) {
+        document.getElementById("intermediateTwo").innerHTML += `Buzz <br>`;
+    } else if (num % 5 == 0) {
+        document.getElementById("intermediateTwo").innerHTML += `Fizz <br>`;
+    } else if (num % 3 == 0 && num % 5 == 0) {
+        document.getElementById("intermediateTwo").innerHTML += `FizzBuzz <br>`;
+    } else {
+        document.getElementById("intermediateTwo").innerHTML += `${num} <br>`;
+    };
+});
+
+
+
+// Exercise 3 -- try to recreate this form using a loop :
+// *
+// **
+// ***
+// ****
+// *****
+
+var star = '';
+
+for (let count = 0; count < 5; count++) {
+    star += '*';
+    document.getElementById("intermediateThree").innerHTML += `${star} <br>`;
+}

@@ -13,3 +13,18 @@ a {
     margin: 0 auto;
     max-width: 90%;
 }
+
+
+#menu {
+   width: 300px;
+   background-color: gray;
+   height: 100%;
+}
+
+    #menu-btn {
+        color: black;
+    }
+
+li a {
+   text-decoration: none;
+}
